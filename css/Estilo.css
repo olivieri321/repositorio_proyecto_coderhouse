@@ -1,0 +1,333 @@
+
+*{
+    margin: 0%;
+    overflow:hidden;
+}
+html{
+    height: fit-content;
+    overflow-y: scroll;
+}
+h1 {
+    color: #e3e3e3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    margin: auto;
+}
+nav {
+    background-color: #455d7a;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    position:sticky;
+    height:fit-content;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    font-style: none;
+    border: #191919;
+    border-radius: 1%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0%;
+}
+li {
+    text-align: center;
+    display: inline-block;
+    font-size:200%;
+    width: 70px;
+    height: fit-content;
+}
+header {
+    background-image: linear-gradient(to left,yellow, #191919);
+    width: 100%;
+    height: fit-content;
+}
+main {
+    background-color: #f5b553;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 80%;
+}
+footer {
+    background-color: #191919;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+
+}
+body {
+    background-color: #455d7a;
+    background:repeat url(../img/circle-blues.webp);
+    display: flex;
+    width: 100%;
+    height:fit-content;
+    color: #e3e3e3;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.boton_navegacion{
+    background-color: #455d7a;
+    height: auto;
+    width: 100%;
+    block-size: 100%;
+    margin: auto;
+
+}
+.boton_navegacion:hover{
+    transition: 2s;
+    background-color: #f5b553;
+    filter: grayscale(0.1);
+}
+.orden_menu{
+    margin: auto;
+    display: flex;
+    list-style-type: none;
+}
+.botonform{
+    margin-left: 1.5%;
+}
+.elementos_navegacion{
+    color: #e3e3e3;
+    margin: 0%;
+    height: 20%;
+    font-size: 50%;
+}
+.imagen_producto {
+    height: 20%;
+    width: 20%;
+    margin: auto;
+    display: inline-block;
+    border: #191919;
+    border-radius: 2%;
+    border-width: 1%;
+}
+.color_parrafo{
+    font-size: medium;
+    color: black;
+}
+#formulario_contacto{
+    width: 60%;
+}
+.Formulario_Forma{
+    background-color: #191919;
+    width: 90%;
+    margin: 10px 10px 5% 5%;
+    display:flex;
+    justify-content: center;
+}
+#areatexto_formulario_contacto{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    flex-direction: column;
+    width: 100%;
+}
+#logo{
+    width: 200px;
+    display: inline-block;
+    height: 200px;
+}
+#contenedor_de_imagenes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#arealogo{
+    width: 100%;
+    height: fit-content;
+}
+/**
+ * IDs de mains
+ *
+ * ------------------------------------------------------
+ */
+#home_contenido{
+    display: grid;
+    grid-template-areas:"gif gif descripcion"
+                        "gif gif descripcion"
+                        "descripcion2 imgproducto imgproducto"
+                        "descripcion2 imgproducto imgproducto";
+    height: 80%;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: 30% 30% 40% ;
+    grid-template-rows:30% 30% 40%;
+}
+#grid_compras{
+    display: grid;
+    grid-template-areas:"categorias productos productos productos"
+                        "categorias productos productos productos"
+                        "categorias productos productos productos"
+                        "categorias productos productos productos";
+    height: 80%;
+    justify-content: stretch;
+    justify-items: stretch;
+    align-items: stretch;
+    grid-template-columns: 10% 30% 30% 30% ;
+    grid-template-rows:40% 40% 40% 40% ;
+}
+#zona_suscripcion{
+    display: flex;
+    height: 80%;
+    justify-content:center;
+    flex-direction: column;
+    
+}
+/**
+ * IDs de Contenido de home_contenido
+ *
+ * ------------------------------------------------------
+ */
+#descripcionempresa{
+    grid-area: descripcion;
+    background-color: #191919;
+    height: 100%;
+    width: 100%;
+    
+}
+#gifempresa{
+    grid-area: gif;
+    background-color: aquamarine;
+    height: 100%;
+    width: 100%;
+}
+#imagenesproductos{
+    grid-area: imgproducto;
+    background-color: azure;
+    height: 100%;
+}
+#descrripcionproductos{
+    grid-area: descripcion2;
+    background-color: #191919;
+    height: 100%;
+}
+#gifempresa{
+    display: block;
+    height: fit-content;
+    height: 100%;
+}
+#descripcion3{
+    height: 100%;
+    width: 100%;
+    background-color: #455d7a;
+    border-top: 10px solid #191919;
+    border-bottom: 10px solid #191919;
+
+}
+.imagenesproductosmain{
+    height: 100%;
+    width: 100%; 
+}
+/**
+ * IDs de Contenido de grid_compras
+ *
+ * ------------------------------------------------------
+ */
+#categoria_inventario{
+    background-color: #455d7a;
+    grid-area: categorias;
+    height: fit-content;
+    font-size:x-small;
+    height: 100%;
+}
+.zona_producto{
+    background-color: #191919;
+    grid-area: productos;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content; 
+    justify-content:stretch;   
+}
+.listacategoria{
+    display: flex;
+    flex-direction: column;
+}
+.img_producto{
+    height: 60%;
+    width: 60%;
+    display: inline-block;
+    margin-left: 20%;
+}
+.caja_producto{
+    background-color: #455d7a;
+    width:24.6%;
+    height: fit-content;
+    margin:0.2%
+}
+/**
+ * IDs de Contenido de locales
+ *
+ * ------------------------------------------------------
+ */
+
+#descripcion_locales{
+    width: 100%;
+    background-color: #191919;
+    color: #e3e3e3;
+}
+#mapa_local{
+    width: 100%;
+    height: 600px;
+}
+/**
+ * IDs de Contenido de suscripcion
+ *
+ * ------------------------------------------------------
+ */
+
+.descripcion_suscripcion{
+    background-color: #191919;
+    width: 100%;
+}
+/**
+ * Responsive, MD
+ *
+ * ------------------------------------------------------
+ */
+
+@media only screen and (min-width: 400px) and (max-width:500px){
+
+    .elementos_navegacion{
+        font-size: 40%;
+    }
+    .boton_navegacion{
+        width: fit-content;
+    }
+    #logo{
+        width: 150px;
+        height: 150px;
+    }
+    #home_contenido{
+        display: flex;
+        height: 80%;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 400px){
+    .elementos_navegacion{
+        font-size: 38%;
+    }
+    .boton_navegacion{
+        width: fit-content;
+    }
+    #logo{
+        width: 100px;
+        height: 100px;
+    }
+    #home_contenido{
+        display: flex;
+        height: 80%;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
